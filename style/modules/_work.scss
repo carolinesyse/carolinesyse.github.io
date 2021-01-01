@@ -1,0 +1,56 @@
+#work{
+    .workItem{
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+        clear: both;
+        position: relative;
+
+        cursor: pointer;
+
+        display: flex; // responsiv - display: inline-block;
+        
+        .workDesc{
+            width: 50%;
+            //float: left;
+            .workTitle{
+                font-size: 1.5rem;
+                font-weight: bold;
+                width: 90%;
+            }
+            hr{
+                width: 40%;
+                margin: unset;
+                margin: 10px 0;
+                //float: inherit; (responsiv)
+            }
+            .workDate{
+                //float: inherit;
+                width: 100%;
+
+            }
+        }
+        .workImg{
+            //transition: all 200ms;
+            transition: all cubic-bezier(.55,-0.15,.37,1.27) 300ms;
+            width: 50%;
+            height: auto;
+            //float: right; //responsive: left
+            -webkit-box-shadow: 0px 3px 20px -5px rgba(0,0,0,0.6); 
+            box-shadow: 0px 3px 20px -5px rgba(0,0,0,0.6);
+
+        }
+
+
+    }
+
+
+
+
+}
+
+.workItem:hover{
+    .workImg{
+        transform: rotate(5deg);
+    }
+}

@@ -1,4 +1,104 @@
-p {
-  font-family: cursive;
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+section {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+header {
+  width: 100%;
+  position: relative;
+  height: 100px;
+  margin-bottom: 80px;
+}
+
+header #logo {
+  position: absolute;
+  left: 0;
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  font-size: 2rem;
+  margin-top: 35px;
+}
+
+header #nav {
+  font-size: 0.9rem;
+}
+
+header #nav #title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+
+header #nav a {
+  position: absolute;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+}
+
+#work .workItem {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  clear: both;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#work .workItem .workDesc {
+  width: 50%;
+}
+
+#work .workItem .workDesc .workTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 90%;
+}
+
+#work .workItem .workDesc hr {
+  width: 40%;
+  margin: unset;
+  margin: 10px 0;
+}
+
+#work .workItem .workDesc .workDate {
+  width: 100%;
+}
+
+#work .workItem .workImg {
+  -webkit-transition: all cubic-bezier(0.55, -0.15, 0.37, 1.27) 300ms;
+  transition: all cubic-bezier(0.55, -0.15, 0.37, 1.27) 300ms;
+  width: 50%;
+  height: auto;
+  -webkit-box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 3px 20px -5px rgba(0, 0, 0, 0.6);
+}
+
+.workItem:hover .workImg {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+#about .aboutTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
