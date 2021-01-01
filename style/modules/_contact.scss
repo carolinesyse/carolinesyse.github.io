@@ -5,5 +5,14 @@
         margin-bottom: 30px;
     }
     #contactContent{
+        a{
+            width: 50px;
+            display: block;
+            margin: 5px 0;
+            padding: 5px;
+            padding-left: 0;
+
+            cursor: alias;
+        }
     }
 }

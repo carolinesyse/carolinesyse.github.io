@@ -10,11 +10,19 @@ body{
     margin: 0 auto;
     width: 80%;
     max-width: 1200px;
+    color: rgb(34, 34, 34);
+    background-color: rgb(255, 253, 249);
 }
 
 section{
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
-    margin-bottom: 80px;
+    margin-bottom: 20vh;
     position: relative;
+}
+
+a{
+    color: rgb(34, 34, 34);
+    //text-decoration: none;
+    transition: 200ms;
 }

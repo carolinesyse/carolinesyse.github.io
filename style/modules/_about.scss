@@ -1,19 +1,39 @@
 #about{
+
+    position: relative;
+    height: 65vh;
+    //height: fit-content;
+
     #aboutTitle{
+        width: 100%;
         font-size: 1.5rem;
         font-weight: bold;
         margin-bottom: 30px;
     }
+
     #aboutContent{
         width: 100%;
-        #aboutText{
-            width: 45%;
-            display: inline-block;
-            padding-right: 10px;
-        }
+        height: 100%;
+        position: relative;
+
         img{
             width: 50%;
-            display: inline-block;
+            position: absolute;
+            top:0;
+        }
+
+        #aboutTextContainer{
+            width: 50%;
+            height: auto;
+            
+
+            position: absolute;
+            right: 0;
+            top:0;
+
+            #aboutText{
+                padding-left: 30px;
+            }
         }
     }
 }

@@ -8,13 +8,21 @@ body {
   margin: 0 auto;
   width: 80%;
   max-width: 1200px;
+  color: #222222;
+  background-color: #fffdf9;
 }
 
 section {
-  width: 60%;
+  width: 75%;
   margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 20vh;
   position: relative;
+}
+
+a {
+  color: #222222;
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 
 header {
@@ -50,6 +58,11 @@ header #nav a {
   padding: 0;
   margin: 0;
   bottom: 0;
+  cursor: s-resize;
+}
+
+a:hover {
+  opacity: 0.5;
 }
 
 #work .workItem {
@@ -94,11 +107,17 @@ header #nav a {
 }
 
 .workItem:hover .workImg {
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
+  -webkit-transform: rotate(5deg) scale(1.05);
+          transform: rotate(5deg) scale(1.05);
+}
+
+#about {
+  position: relative;
+  height: 65vh;
 }
 
 #about #aboutTitle {
+  width: 100%;
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 30px;
@@ -106,22 +125,40 @@ header #nav a {
 
 #about #aboutContent {
   width: 100%;
-}
-
-#about #aboutContent #aboutText {
-  width: 45%;
-  display: inline-block;
-  padding-right: 10px;
+  height: 100%;
+  position: relative;
 }
 
 #about #aboutContent img {
   width: 50%;
-  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+#about #aboutContent #aboutTextContainer {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#about #aboutContent #aboutTextContainer #aboutText {
+  padding-left: 30px;
 }
 
 #contact #contactTitle {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 30px;
+}
+
+#contact #contactContent a {
+  width: 50px;
+  display: block;
+  margin: 5px 0;
+  padding: 5px;
+  padding-left: 0;
+  cursor: alias;
 }
 /*# sourceMappingURL=style.css.map */
