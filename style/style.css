@@ -14,6 +14,7 @@ section {
   width: 60%;
   margin: 0 auto;
   margin-bottom: 80px;
+  position: relative;
 }
 
 header {
@@ -52,7 +53,7 @@ header #nav a {
 }
 
 #work .workItem {
-  margin-top: 30px;
+  margin-top: 40px;
   width: 100%;
   height: auto;
   clear: both;
@@ -97,8 +98,30 @@ header #nav a {
           transform: rotate(5deg);
 }
 
-#about .aboutTitle {
+#about #aboutTitle {
   font-size: 1.5rem;
   font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#about #aboutContent {
+  width: 100%;
+}
+
+#about #aboutContent #aboutText {
+  width: 45%;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+#about #aboutContent img {
+  width: 50%;
+  display: inline-block;
+}
+
+#contact #contactTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */

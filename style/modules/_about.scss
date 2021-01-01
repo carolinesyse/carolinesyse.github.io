@@ -1,14 +1,19 @@
 #about{
-    .aboutTitle{
+    #aboutTitle{
         font-size: 1.5rem;
         font-weight: bold;
+        margin-bottom: 30px;
     }
     #aboutContent{
-        img{
-            
-        }
+        width: 100%;
         #aboutText{
-
+            width: 45%;
+            display: inline-block;
+            padding-right: 10px;
+        }
+        img{
+            width: 50%;
+            display: inline-block;
         }
     }
 }
