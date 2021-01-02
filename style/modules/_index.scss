@@ -15,7 +15,7 @@ body{
 }
 
 section{
-    width: 75%;
+    width: 65%;
     margin: 0 auto;
     margin-bottom: 20vh;
     position: relative;
@@ -25,4 +25,33 @@ a{
     color: rgb(34, 34, 34);
     //text-decoration: none;
     transition: 200ms;
+}
+
+
+// Jobbeklasser
+
+.blur{
+    filter: blur(5px);
+}
+
+.noScroll{
+    overflow: hidden;
+}
+
+.hidden{
+    opacity: 0;
+    pointer-events: none;
+
+    z-index: -1000;
+
+    transition: opacity 200ms;
+}
+
+.visible{
+    opacity: 1;
+    pointer-events: all;
+
+    z-index: 1000;
+
+    transition: opacity 200ms;
 }

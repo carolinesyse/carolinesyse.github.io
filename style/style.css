@@ -13,7 +13,7 @@ body {
 }
 
 section {
-  width: 75%;
+  width: 65%;
   margin: 0 auto;
   margin-bottom: 20vh;
   position: relative;
@@ -23,6 +23,31 @@ a {
   color: #222222;
   -webkit-transition: 200ms;
   transition: 200ms;
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.noScroll {
+  overflow: hidden;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1000;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 1000;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
 }
 
 header {
@@ -91,6 +116,8 @@ a:hover {
   width: 40%;
   margin: unset;
   margin: 10px 0;
+  border: 1px solid black;
+  opacity: 0.8;
 }
 
 #work .workItem .workDesc .workDate {
@@ -160,5 +187,48 @@ a:hover {
   padding: 5px;
   padding-left: 0;
   cursor: alias;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+#overlay #overlayBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.2;
+}
+
+#overlay .overlayContent {
+  position: relative;
+  overflow-y: scroll !important;
+  width: 54%;
+  height: 85%;
+  margin: 0 auto;
+  margin-top: 2%;
+  background-color: blanchedalmond;
+  padding: 20px;
+}
+
+#overlay .overlayContent .overlayTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 90%;
+}
+
+#overlay .overlayContent hr {
+  width: 40%;
+  margin: unset;
+  margin: 10px 0;
+  border: 1px solid black;
+  opacity: 0.8;
 }
 /*# sourceMappingURL=style.css.map */

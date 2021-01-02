@@ -14,3 +14,34 @@ document.querySelectorAll('#nav a[href^="#"]').forEach(trigger => {
         });
     };
 });
+
+//Jobbefunksjoner
+
+//document.getElementById("work").classList.add("blur");
+//document.getElementById("body").classList.add("noScroll");
+
+
+// Åpne overlay basert på hvilken du klikker på
+
+document.querySelectorAll('.workItem').forEach(trigger => {
+    trigger.onclick = function(e) {
+        //console.log(this.id);
+
+        let clickedItemId = this.id;
+        let currentItemId = clickedItemId + "_content";
+        let currentItem = document.getElementById(currentItemId);
+
+        let overlayElement = document.getElementById("overlay");
+
+        if(overlayElement.classList.contains("hidden")){
+            overlayElement.classList.remove("hidden");
+            overlayElement.classList.add("visible");
+            document.getElementById("work").classList.add("blur");
+            document.getElementById("header").classList.add("blur");
+            document.getElementById("body").classList.add("noScroll");
+        }
+
+        //console.log(currentItemId);
+
+    };
+});
