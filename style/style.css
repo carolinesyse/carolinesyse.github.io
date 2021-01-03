@@ -210,12 +210,17 @@ a:hover {
 #overlay .overlayContent {
   position: relative;
   overflow-y: scroll !important;
-  width: 54%;
-  height: 85%;
+  width: 46%;
+  height: 76%;
   margin: 0 auto;
   margin-top: 2%;
   background-color: blanchedalmond;
-  padding: 20px;
+  padding: 50px;
+}
+
+#overlay .overlayContent .overlayImg {
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 #overlay .overlayContent .overlayTitle {
@@ -225,10 +230,19 @@ a:hover {
 }
 
 #overlay .overlayContent hr {
-  width: 40%;
+  width: 60%;
   margin: unset;
   margin: 10px 0;
   border: 1px solid black;
   opacity: 0.8;
+}
+
+#overlay .overlayContent .overlayDate {
+  margin-bottom: 30px;
+}
+
+#overlay .overlayContent .paragraph {
+  line-height: 1.5rem;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -39,6 +39,8 @@ document.querySelectorAll('.workItem').forEach(trigger => {
             document.getElementById("work").classList.add("blur");
             document.getElementById("header").classList.add("blur");
             document.getElementById("body").classList.add("noScroll");
+            currentItem.classList.remove("hidden");
+            currentItem.classList.add("visible");
         }
 
         //console.log(currentItemId);

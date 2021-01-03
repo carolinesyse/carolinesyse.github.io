@@ -18,17 +18,16 @@
     .overlayContent{
         position: relative;
         overflow-y: scroll !important;
-        width: 54%;
-        height: 85%;
+        width: 46%;
+        height: 76%;
         margin: 0 auto;
         margin-top: 2%;
-        //left: 23%;
-        //top: 7.5%;
         background-color: blanchedalmond;
-        padding: 20px;
+        padding: 50px;
         
         .overlayImg{
-
+            width: 100%;
+            margin-bottom: 30px;
         }
 
         .overlayTitle{
@@ -38,7 +37,7 @@
         }
 
         hr{
-            width: 40%;
+            width: 60%;
             margin: unset;
             margin: 10px 0;
             border: 1px solid black;
@@ -47,11 +46,12 @@
         }
 
         .overlayDate{
-
+            margin-bottom: 30px;
         }
 
         .paragraph{
-
+            line-height: 1.5rem;
+            margin-bottom: 30px;
         }
     }
 }
