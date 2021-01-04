@@ -25,7 +25,6 @@ document.querySelectorAll('#nav a[href^="#"]').forEach(trigger => {
 
 document.querySelectorAll('.workItem').forEach(trigger => {
     trigger.onclick = function(e) {
-        //console.log(this.id);
 
         let clickedItemId = this.id;
         let currentItemId = clickedItemId + "_content";
@@ -42,8 +41,6 @@ document.querySelectorAll('.workItem').forEach(trigger => {
             currentItem.classList.remove("hidden");
             currentItem.classList.add("visible");
         }
-
-        //console.log(currentItemId);
 
     };
 });
