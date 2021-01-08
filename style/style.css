@@ -121,7 +121,7 @@ a:hover {
 }
 
 #work .workItem .workDesc .workDate {
-  width: 100%;
+  width: 90%;
 }
 
 #work .workItem .workImg {
@@ -238,11 +238,12 @@ a:hover {
 }
 
 #overlay .overlayContent .overlayDate {
+  line-height: 1.7rem;
   margin-bottom: 30px;
 }
 
 #overlay .overlayContent .paragraph {
-  line-height: 1.5rem;
+  line-height: 1.7rem;
   margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */
