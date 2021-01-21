@@ -33,10 +33,12 @@ document.querySelectorAll('.workItem').forEach(trigger => {
         
         clickedItemId = this.id;
         currentItemId = clickedItemId + "_content";
+
         currentItem = document.getElementById(currentItemId);
         overlayElement = document.getElementById("overlay");
 
         if(overlayElement.classList.contains("hidden")){
+
             console.log(currentItem);
             overlayElement.classList.remove("hidden");
             overlayElement.classList.add("visible");
@@ -45,12 +47,30 @@ document.querySelectorAll('.workItem').forEach(trigger => {
             document.getElementById("body").classList.add("noScroll");
             currentItem.classList.remove("hidden");
             currentItem.classList.add("visible");
+
         }
 
     };
 });
 
+document.getElementById("overlayBg").onclick = function(e){
+    if (e.target !== this){
+		return;
+	}else{
+		closeOverlay();
+	}
+}
+
 function closeOverlay(){
+
+    overlayElement.classList.add("hidden");
+    overlayElement.classList.remove("visible");
+
+    document.getElementById("work").classList.remove("blur");
+    document.getElementById("header").classList.remove("blur");
+    document.getElementById("body").classList.remove("noScroll");
+
     currentItem.classList.remove("visible");
     currentItem.classList.add("hidden");
 }
+
