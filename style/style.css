@@ -197,6 +197,12 @@ a:hover {
   width: 100vw;
 }
 
+#overlay #closeBtn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
 #overlay #overlayBg {
   position: absolute;
   top: 0;

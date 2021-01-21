@@ -23,16 +23,21 @@ document.querySelectorAll('#nav a[href^="#"]').forEach(trigger => {
 
 // Åpne overlay basert på hvilken du klikker på
 
+var clickedItemId;
+var currentItemId;
+var currentItem;
+var overlayElement;
+
 document.querySelectorAll('.workItem').forEach(trigger => {
-    trigger.onclick = function(e) {
-
-        let clickedItemId = this.id;
-        let currentItemId = clickedItemId + "_content";
-        let currentItem = document.getElementById(currentItemId);
-
-        let overlayElement = document.getElementById("overlay");
+    trigger.onclick = function(e) {        
+        
+        clickedItemId = this.id;
+        currentItemId = clickedItemId + "_content";
+        currentItem = document.getElementById(currentItemId);
+        overlayElement = document.getElementById("overlay");
 
         if(overlayElement.classList.contains("hidden")){
+            console.log(currentItem);
             overlayElement.classList.remove("hidden");
             overlayElement.classList.add("visible");
             document.getElementById("work").classList.add("blur");
@@ -44,3 +49,8 @@ document.querySelectorAll('.workItem').forEach(trigger => {
 
     };
 });
+
+function closeOverlay(){
+    currentItem.classList.remove("visible");
+    currentItem.classList.add("hidden");
+}
