@@ -42,6 +42,8 @@
         .overlayImg{
             width: 100%;
             margin-bottom: 30px;
+            max-height: 450px;
+            object-fit: cover;
         }
 
         .overlayTitle{

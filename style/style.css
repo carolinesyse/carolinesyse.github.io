@@ -15,7 +15,7 @@ body {
 section {
   width: 65%;
   margin: 0 auto;
-  margin-bottom: 20vh;
+  margin-bottom: 15vh;
   position: relative;
 }
 
@@ -23,6 +23,13 @@ a {
   color: #222222;
   -webkit-transition: 200ms;
   transition: 200ms;
+}
+
+.elementImg {
+  width: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .blur {
@@ -60,7 +67,6 @@ header {
 header #logo {
   position: absolute;
   left: 0;
-  font-family: Futura,Trebuchet MS,Arial,sans-serif;
   font-size: 2rem;
   margin-top: 35px;
 }
@@ -134,8 +140,8 @@ a:hover {
 }
 
 .workItem:hover .workImg {
-  -webkit-transform: rotate(5deg) scale(1.05);
-          transform: rotate(5deg) scale(1.05);
+  -webkit-transform: rotate(2deg) scale(1.01);
+          transform: rotate(2deg) scale(1.01);
 }
 
 #about {
@@ -227,6 +233,9 @@ a:hover {
 #overlay .overlayContent .overlayImg {
   width: 100%;
   margin-bottom: 30px;
+  max-height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #overlay .overlayContent .overlayTitle {
