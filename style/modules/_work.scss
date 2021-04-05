@@ -26,7 +26,6 @@
             }
             .workDate{
                 width: 90%;
-
             }
         }
         .workImg{
@@ -38,7 +37,6 @@
             
             -webkit-box-shadow: 0px 3px 20px -5px rgba(0,0,0,0.6); 
             box-shadow: 0px 3px 20px -5px rgba(0,0,0,0.6);
-
         }
 
 
@@ -55,28 +53,23 @@
 
 @media only screen and (max-width: 800px) {
     #work {
+        position: relative;
         .workItem{
-            margin-top: 5vh;
-
-            display: -webkit-box;
-            display: box;
-
-            -webkit-box-orient: vertical;
-            box-orient: vertical;
-            .workImg{
-                -webkit-box-ordinal-group: 1;
-                box-ordinal-group: 1;
-                width: 100%;
-            }
+            margin-top: 10vh;
+            display: block;
+            position: relative;
             .workDesc{
-                -webkit-box-ordinal-group: 2;
-                box-ordinal-group: 2;
-                
                 width: 100%;
-                margin-top: 1vh;
+                padding-top: 80%;
                 hr{
                     width: 70%;
                 }
+            }
+
+            .workImg{
+                position: absolute;
+                top:0;
+                width: 100%;
             }
         }
     }
