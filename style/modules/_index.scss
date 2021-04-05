@@ -11,13 +11,13 @@ body{
     width: 80%;
     max-width: 1200px;
     color: rgb(34, 34, 34);
-    background-color: rgb(255, 253, 249);
+    background-color: rgb(252, 251, 249);
 }
 
 section{
     width: 65%;
     margin: 0 auto;
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
     position: relative;
 }
 
@@ -61,4 +61,18 @@ a{
     z-index: 1000;
 
     transition: opacity 200ms;
+}
+
+//media quiery
+
+@media only screen and (max-width: 800px) {
+    body {
+      //background-color: palegoldenrod;
+      width: 90%;
+    }
+    section{
+        width: 95%;
+        //background-color: green;
+        margin-bottom: 10vh;
+    }
 }

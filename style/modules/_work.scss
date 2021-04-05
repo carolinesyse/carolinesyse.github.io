@@ -12,7 +12,6 @@
         
         .workDesc{
             width: 50%;
-            //float: left;
             .workTitle{
                 font-size: 1.5rem;
                 font-weight: bold;
@@ -24,20 +23,19 @@
                 margin: 10px 0;
                 border: 1px solid black;
                 opacity: 0.8;
-                //float: inherit; (responsiv)
             }
             .workDate{
-                //float: inherit;
                 width: 90%;
 
             }
         }
         .workImg{
-            //transition: all 200ms;
-            transition: all cubic-bezier(.55,-0.15,.37,1.27) 300ms;
             width: 50%;
             height: auto;
-            //float: right; //responsive: left
+            object-fit: cover;
+            
+            transition: all cubic-bezier(.55,-0.15,.37,1.27) 300ms;
+            
             -webkit-box-shadow: 0px 3px 20px -5px rgba(0,0,0,0.6); 
             box-shadow: 0px 3px 20px -5px rgba(0,0,0,0.6);
 
@@ -50,5 +48,45 @@
 .workItem:hover{
     .workImg{
         transform: rotate(2deg) scale(1.01);
+    }
+}
+
+//media quiery
+
+@media only screen and (max-width: 800px) {
+    #work {
+        .workItem{
+            margin-top: 5vh;
+
+            display: -webkit-box;
+            display: box;
+
+            -webkit-box-orient: vertical;
+            box-orient: vertical;
+            .workImg{
+                -webkit-box-ordinal-group: 1;
+                box-ordinal-group: 1;
+                width: 100%;
+            }
+            .workDesc{
+                -webkit-box-ordinal-group: 2;
+                box-ordinal-group: 2;
+                
+                width: 100%;
+                margin-top: 1vh;
+                hr{
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+//ingen rotering på bildene ved touch
+@media (hover: none) {
+    .workItem:hover{
+        .workImg{
+            transform: none;
+        }
     }
 }

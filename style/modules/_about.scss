@@ -2,7 +2,6 @@
 
     position: relative;
     height: 65vh;
-    //height: fit-content;
 
     #aboutTitle{
         width: 100%;
@@ -33,6 +32,27 @@
 
             #aboutText{
                 padding-left: 30px;
+            }
+        }
+    }
+}
+
+//media quiery
+
+@media only screen and (max-width: 800px) {
+    #about{
+        height: auto;
+        #aboutContent{
+            img{
+                width: 70%;
+                position: relative;
+            }
+            #aboutTextContainer{
+                width: 70%;
+                position: relative;
+                #aboutText{
+                    padding: 10px 0px 0px 0px;
+                }
             }
         }
     }
