@@ -7,8 +7,9 @@
 
     #closeBtn{
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: 20px;
+        left: 20px;
+        font-size: 1.7rem;
     }
 
     #overlayBg{
@@ -17,7 +18,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgb(172, 172, 172);
+        background-color: rgb(150, 150, 150);
         opacity: 0.1;
     }
 
@@ -27,8 +28,9 @@
 
         width: 50%;
         left: 20%;
-        top: 5%;
-        height: 80%;
+        top: 30px;
+        bottom: 30px;
+        //height: 80%;
 
         //margin: 0 auto;
         //margin-top: 2%;
@@ -73,10 +75,15 @@
 
 @media only screen and (max-width: 800px) {
     #overlay{
+        #closeBtn{
+            top: 3px;
+            left: 10px;
+            font-size: 1.2rem;
+        }
         .overlayContent{
-            width: 90%;
-            left: 2.5%;
-            height: 90%;
+            width: 85%;
+            left: 5%;
+            bottom: 20px;
             padding: 2.5%;
             .overlayTitle{
                 font-size: 1.5rem;
