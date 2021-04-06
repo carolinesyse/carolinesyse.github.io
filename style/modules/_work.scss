@@ -26,6 +26,7 @@
             }
             .workDate{
                 width: 90%;
+                line-height: 1.5rem;
             }
         }
         .workImg{
@@ -60,7 +61,7 @@
             position: relative;
             .workDesc{
                 width: 100%;
-                padding-top: 370px;
+                padding-top: 420px;
                 hr{
                     width: 70%;
                 }
@@ -70,7 +71,7 @@
                 position: absolute;
                 top:0;
                 width: 100%;
-                height: 350px;
+                height: 400px;
             }
         }
     }
