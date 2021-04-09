@@ -283,6 +283,16 @@ a:hover {
   top: 20px;
   left: 20px;
   font-size: 1.7rem;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+#overlay #closeBtn:hover {
+  -webkit-transform: scale(1.2) rotate(90deg);
+          transform: scale(1.2) rotate(90deg);
 }
 
 #overlay #overlayBg {

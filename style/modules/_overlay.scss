@@ -10,6 +10,11 @@
         top: 20px;
         left: 20px;
         font-size: 1.7rem;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    #closeBtn:hover{
+        transform: scale(1.2) rotate(90deg);
     }
 
     #overlayBg{
