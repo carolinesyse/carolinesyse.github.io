@@ -44,6 +44,7 @@ document.querySelectorAll('.workItem').forEach(trigger => {
             overlayElement.classList.add("visible");
             document.getElementById("work").classList.add("blur");
             document.getElementById("header").classList.add("blur");
+            document.getElementById("about").classList.add("blur");
             document.getElementById("body").classList.add("noScroll");
             currentItem.classList.remove("hidden");
             currentItem.classList.add("visible");
@@ -68,6 +69,7 @@ function closeOverlay(){
 
     document.getElementById("work").classList.remove("blur");
     document.getElementById("header").classList.remove("blur");
+    document.getElementById("about").classList.remove("blur");
     document.getElementById("body").classList.remove("noScroll");
 
     currentItem.classList.remove("visible");
