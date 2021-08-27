@@ -225,9 +225,10 @@ a:hover {
 }
 
 #about #aboutContent img {
-  width: 50%;
+  width: 40%;
   position: absolute;
   top: 0;
+  left: 10px;
 }
 
 #about #aboutContent #aboutTextContainer {
@@ -247,8 +248,9 @@ a:hover {
     height: auto;
   }
   #about #aboutContent img {
-    width: 70%;
+    width: 50%;
     position: relative;
+    left: 0;
   }
   #about #aboutContent #aboutTextContainer {
     width: 70%;
